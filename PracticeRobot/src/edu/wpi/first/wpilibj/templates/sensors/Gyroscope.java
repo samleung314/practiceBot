@@ -12,9 +12,9 @@ public class Gyroscope extends Constants {
     public static final AnalogChannel gyroAnalog  = new AnalogChannel(GYROSCOPE);
     public static Gyro gyro = new Gyro(gyroAnalog);
     
-    public static double p = 0.01;
+    public static double p = 0.03;
     public static double i = 0;
-    public static double d = 0.01; 
+    public static double d = 0; 
     public static PIDController pid = new PIDController(p, i, d, gyro, Drive.leftVic);
 
     public static double GetAngle(){
