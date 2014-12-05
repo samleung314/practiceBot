@@ -9,7 +9,7 @@ public class RobotTemplate extends IterativeRobot {
   
     public void robotInit() 
     {
-
+        Gyroscope.pid.startLiveWindowMode();
     }
 
 
