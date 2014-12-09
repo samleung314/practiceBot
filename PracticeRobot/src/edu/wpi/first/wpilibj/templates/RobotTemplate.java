@@ -27,7 +27,9 @@ public class RobotTemplate extends IterativeRobot {
     public void teleopPeriodic() 
     {
         Gyroscope.pid.enable();
+        Gyroscope.SetPoint();
         SmartDash.UpdateValues();
+        SmartDash.EnableLiveWin();
         LiveWindow.run();
         
     }
